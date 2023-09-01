@@ -1,0 +1,116 @@
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #ff8e26;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ffdce3;
+    padding: 20px;
+    color: rgb(8, 18, 26);
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #ffffff;
+    height: 300px; 
+    color: rgb(8, 18, 26);
+    align-items: center;
+    
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #3e8bff;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  iframe {
+    margin-right: 0px; /* Espaço entre o iframe e a borda direita */
+    margin-left: 20px; 
+}
+.iframe{
+    margin-right: 0px; /* Espaço entre o iframe e a borda direita */
+    margin-left: 20px;    
+}
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .myButton {
+	background-color:#ff7a8c;
+	border-radius:28px;
+	border:1px solid #10172c;
+	display:inline-block;
+	cursor:pointer;
+	color:#200b0b;
+	font-family:Arial;
+	font-size:15px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+table, th, td {
+    border:1px solid rgb(253, 153, 94);
+    width:50%
+  }
+        
